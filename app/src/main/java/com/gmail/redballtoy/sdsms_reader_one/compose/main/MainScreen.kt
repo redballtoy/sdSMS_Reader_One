@@ -63,8 +63,8 @@ fun MainScreen() {
                     }
                     items(
                         items = smsMessages,
-                        key = {it.date}
-                    ){
+                        key = { it.date }
+                    ) {
                         MessageView(message = it)
                     }
                 }
@@ -100,12 +100,11 @@ private fun readMassages(context: Context, type: String): List<SMSMessage> {
                     read = it.getString(indexRead).toBoolean(),
                     type = it.getInt(indexType),
                     thread = it.getInt(indexThread),
-                    service = it.getString(indexMessage)
+                    service = it.getString(indexService)?: ""
                 )
             )
 
         }
-
     }
     return messages
 }
