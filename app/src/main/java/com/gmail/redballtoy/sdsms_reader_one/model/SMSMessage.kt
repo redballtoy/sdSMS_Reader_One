@@ -1,4 +1,21 @@
 package com.gmail.redballtoy.sdsms_reader_one.model
 
-class SMSMessage {
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
+
+data class SMSMessage(
+    val message: String,
+    val sender: String,
+    val date: Long,
+    val read: Boolean,
+    val type: Int,
+    val thread: Int,
+    val service: String
+)
+
+fun Long.parseDate(): String {
+    val date = Date(this)
+    val format = SimpleDateFormat("dd/MMM/yy HH:mm", Locale.getDefault())
+    return format.format(date)
 }
