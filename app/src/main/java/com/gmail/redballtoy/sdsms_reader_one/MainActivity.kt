@@ -14,7 +14,6 @@ class MainActivity : ComponentActivity() {
             SdSMS_Reader_OneTheme {
                 val navController= rememberNavController()
                 SetupNavGraph(navController = navController)
-
             }
         }
     }
