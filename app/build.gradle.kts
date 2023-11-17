@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.gmail.redballtoy.sdsms_reader_one"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.gmail.redballtoy.sdsms_reader_one"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
