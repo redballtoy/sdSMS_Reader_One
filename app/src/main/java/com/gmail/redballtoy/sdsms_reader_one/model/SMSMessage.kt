@@ -6,12 +6,12 @@ import java.util.Locale
 
 data class SMSMessage(
     val message: String,
-    val sender: String,
+    val sender: String, //number from/to
     val date: Long,
     val read: Boolean,
     val type: Int,
-    val thread: Int,
-    val service: String
+    val thread: Int, //thread for linking messages within one dialog
+    val service: String //mobile operator ID
 )
 
 fun Long.parseDate(): String {
