@@ -56,7 +56,7 @@ fun MainScreen() {
                                 .fillMaxWidth()
                                 .alpha(0.38f),
                             text = date,
-                            textAlign = TextAlign.Center,
+                            textAlign = TextAlign.Start,
                             fontSize = MaterialTheme.typography.bodySmall.fontSize,
                             color = MaterialTheme.colorScheme.onSurface
                         )
