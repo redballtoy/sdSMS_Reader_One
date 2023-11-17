@@ -103,7 +103,6 @@ private fun readMassages(context: Context, type: String): List<SMSMessage> {
                     service = it.getString(indexService)?: ""
                 )
             )
-
         }
     }
     return messages
